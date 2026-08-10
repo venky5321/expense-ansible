@@ -1,7 +1,6 @@
 - name: configure backend server
   become: yes
   hosts: backend
-  vars:
 
   tasks:
   - name: disable default nodejs
@@ -18,3 +17,4 @@
   - name: create expense user
     ansible.builtin.user:
       name: expense
+
