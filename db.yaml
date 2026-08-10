@@ -25,7 +25,7 @@
       - pyMySQL
       - cryptography
      executable: pip3.9 #pip3.11 if python version is 3.11
-     #check password is already setup or not
+     #check password is already setup or not.
   - name: check DB connection
     community.mysql.mysql_info:
      login_user: root
