@@ -8,7 +8,7 @@
     anisble.builtin.command: dnf module disable nodejs -y
 
   - name: enable nodejs:24
-    anisble.builtin.command: dnf module enable nodejs -y
+    anisble.builtin.command: dnf module enable nodejs:24 -y
 
   - name: install nodejs
     ansible.builtin.dnf:
