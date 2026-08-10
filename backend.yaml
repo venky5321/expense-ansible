@@ -1,7 +1,6 @@
 - name: configure backend server
   become: yes
   hosts: backend
-  vars:
 
   tasks:
   - name: disable default nodejs
