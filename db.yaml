@@ -37,7 +37,7 @@
 
   - name: print output
     ansible.builtin.debug:
-     msg: "Output: {{ mysql_connection_output }}"
+     msg: "Output: {{mysql_connection_output}}"
 
   - name: setup root password
     ansible.builtin.command: "mysql_secure_installation --set-root-pass {{ mysql_root_password }}"
